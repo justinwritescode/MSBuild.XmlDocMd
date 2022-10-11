@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Title>MSBuild Targets for XML Doc Markdown</Title>
+    <Description>MSBuild targets for XML Doc Markdown</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <PackageReadme>../../README.md</PackageReadme>
+
+    <PublishReferencesDocumentationFiles>true</PublishReferencesDocumentationFiles>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <PreserveCompilationReferences>true</PreserveCompilationReferences>
+    <FullReferenceAssemblyNames>true</FullReferenceAssemblyNames>
+    <PackProjectReferences>true</PackProjectReferences>
+    <CopyBuildOutputToPublishDirectory>true</CopyBuildOutputToPublishDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+   <PackageReference Include="XmlDocMarkdown.Core" VersionOverride="2.8.0" />
+   <PackageReference Include="Microsoft.Build.Utilities.Core" />
+   <PackageReference Include="System.ComponentModel.Annotations" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="System.ComponentModel.Annotations" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageFile Include="../../README.md" PackagePath="README.md" />
+  </ItemGroup>
+ <!-- <UsingTask TaskName="GenerateMdDoc" AssemblyFile="$(OutputPath)$(AssemblyName).dll" />
+  <Target Name="GenerateXmlDocMd" AfterTargets="Build">
+    <GenerateMdDoc InputAssemblyPath="$(OutputPath)$(AssemblyName).dll"
+      XnkDocPath="$(DocumentationFile)" />
+  </Target> -->
+</Project>

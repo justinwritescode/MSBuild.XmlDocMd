@@ -1,0 +1,5 @@
+<Project>
+  <UsingTask TaskName="GenerateMdDocTask" AssemblyFile="$(MSBuildThisFileDirectory)../lib/MSBuild./XmlDocMd.dll" />
+  <Target Name="GenerateXmlDocMarkdown">
+  </Target>
+</Project>
