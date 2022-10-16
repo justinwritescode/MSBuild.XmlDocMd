@@ -1,0 +1,30 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSBuild.XmlDocMd", "src\MSBuild.XmlDocMd\MSBuild.XmlDocMd.csproj", "{337A0FEB-3A00-4646-BED1-D84B5D5DBBDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Testing|Any CPU = Testing|Any CPU
+		Local|Any CPU = Local|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{337A0FEB-3A00-4646-BED1-D84B5D5DBBDE}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{337A0FEB-3A00-4646-BED1-D84B5D5DBBDE}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{337A0FEB-3A00-4646-BED1-D84B5D5DBBDE}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{337A0FEB-3A00-4646-BED1-D84B5D5DBBDE}.Local|Any CPU.Build.0 = Local|Any CPU
+		{337A0FEB-3A00-4646-BED1-D84B5D5DBBDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337A0FEB-3A00-4646-BED1-D84B5D5DBBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337A0FEB-3A00-4646-BED1-D84B5D5DBBDE}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{337A0FEB-3A00-4646-BED1-D84B5D5DBBDE}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{337A0FEB-3A00-4646-BED1-D84B5D5DBBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337A0FEB-3A00-4646-BED1-D84B5D5DBBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {258D5354-3D50-4599-AF5C-A64807BABF9E}
+	EndGlobalSection
+EndGlobal
